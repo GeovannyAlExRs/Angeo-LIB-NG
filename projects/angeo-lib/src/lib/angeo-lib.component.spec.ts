@@ -8,7 +8,7 @@ describe('AngeoLibComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AngeoLibComponent]
+      declarations: [AngeoLibComponent],
     });
     fixture = TestBed.createComponent(AngeoLibComponent);
     component = fixture.componentInstance;
