@@ -28,13 +28,23 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/angeo-lib/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
+            "polyfills": ["zone.js", "zone.js/testing"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/angeo-lib/**/*.ts",
+              "projects/angeo-lib/**/*.html"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false,
+    "schematicCollections": ["@angular-eslint/schematics"]
   }
 }
