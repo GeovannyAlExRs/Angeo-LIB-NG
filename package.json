@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:angeo-lib": "ng build angeo-lib",
+    "start:angeo-lib": "npm link ./projects/angeo-lib && ng serve --watch",
+    "install-library-local": "npm run build:angeo-lib && npm i ./dist/angeo-lib"
   },
   "private": true,
   "dependencies": {
